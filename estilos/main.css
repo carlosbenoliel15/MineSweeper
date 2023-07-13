@@ -1,0 +1,319 @@
+/* ------------------------------------------------------------------------------- */
+
+
+/* Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL. */
+
+
+/*                              Ano letivo: 2021/2022                              */
+
+
+/*                   Site realizado pelo Grupo 40 do turno PL23:                   */
+
+
+/*   Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751  */
+
+
+/*               Apresentação/Estilos e Posicionamento dos elementos               */
+
+
+/* ------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import "print.css" print;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*____________________________________________________________*/
+
+::-webkit-scrollbar {
+    /*-->scroll bar largura e altura*/
+    width: 5px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+    /*-->scroll bar background color*/
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    /*-->scroll bar cor*/
+    background: -moz-linear-gradient(top, #333333 0%, #ffffff 25%, #a5a5a5 50%, #595959 76%, #333333 100%);
+    /*-->scroll bar degrade color*/
+    background: -webkit-linear-gradient(top, #333333 0%, #ffffff 25%, #a5a5a5 50%, #595959 76%, #333333 100%);
+    background: linear-gradient(to bottom, #333333 0%, #ffffff 25%, #a5a5a5 50%, #595959 76%, #333333 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333', GradientType=0);
+}
+
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 5%;
+}
+
+header .logo:hover {
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+}
+
+
+/*______________________________________________________*/
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(https://i.ibb.co/HrfVRcx/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    padding-right: 5%;
+}
+
+.toggle.active {
+    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+/*______________________________________________________*/
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+
+/*______________________________________________________*/
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+}
+
+nav ul {
+    margin-bottom: 80%;
+    position: relative;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: orangered !important;
+}
+
+
+/*______________________________________________________*/
+
+.playButn {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.playButn a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.playButn a:hover {
+    color: orangered !important;
+    font-weight: bold;
+}
+
+
+/*______________________________________________________*/
+
+.login-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding-right: 0.1cm;
+    padding-top: 0.1cm;
+}
+
+.login-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.login-icon img:hover {
+    width: 70px;
+    height: 70px;
+    transition: 1s;
+}
+
+
+/*______________________________________________________*/
+
+
+/*Ajuste de tamanho da janela pequena*/
+
+@media (max-width: 991px) {
+    .showcase,
+    .showcase .text,
+    .showcase header {
+        padding: 40px;
+    }
+}
+
+
+/*______________________________________________________*/
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    display: inline;
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+footer li a:hover {
+    color: orangered !important;
+}
+
+
+/* USADO NOS JOGOS E NO PLAY */
+
+
+/*----------------------------------------------------*/
+
+
+/*Popup modal*/
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms ease-in-out;
+    width: 50%;
+    height: 13cm;
+    overflow: auto;
+    /* Enable scroll if needed */
+    opacity: 95%;
+    background-color: #333333;
+    max-width: 80%;
+    /* Full width */
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+}
+
+.close {
+    color: #aaaaaa !important;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black !important;
+}
+
+.modal-header .title {
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+    color: white;
+}

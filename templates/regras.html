@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!-- ================================================================================== -->
+<!-- Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL.    -->
+<!--                               Ano letivo: 2021/2022                                -->
+<!--                    Site realizado pelo Grupo 40 do turno PL23:                     -->
+<!--    Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751    -->
+<!-- ================================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/regras.css">
+    <link rel="icon" type="image/png" href="../imagens/mine_logo.png" />
+    <title>MineSweeper 1.0 - Regras</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                <a href="./index.html"><img src="../imagens/MINESWEEPER.png" alt="logotipo MineSweeper" height="20"></a>
+            </h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="../audio_e_video/videoplayback-online-video-cuttercom_78igNW2U.mp4" muted loop autoplay>Your browser does not support the video element.</video>
+        <div class="container">
+            <h1 class="regras">Regras do MineSweeper</h1>
+            <div class="text">
+                <p>
+                    &emsp;&emsp;O MineSweeper é jogado num campo com minas distribuídas aleatoriamente.<br> &emsp;&emsp;
+                    <strong>Ao selecionar um quadrado</strong> este pode, ou não, esconder uma mina. <strong>Caso</strong> o quadrado selecionado <strong>contiver uma mina</strong>,<strong> GAMEOVER</strong>!<br> &emsp;&emsp;
+                    <strong>Se</strong> o quadrado selecionado <strong>não contiver uma mina</strong> existem 2 alternativas:</p>
+                <ul>
+                    <li><strong>Surge um número </strong>, indicando a quantidade de minas pelas quais esse quadrado é tocado;</li>
+                    <li><strong>Nenhum número aparece</strong> e o jogo revela automaticamente os quadrados que se encontram adjacentes ao quadrado vazio que não contêm minas.</li>
+                </ul>
+                <p>&emsp;&emsp;Quando <strong>suspeitar</strong> que um quadrado contém uma <strong>mina</strong> é possível <strong>sinalizá-lo com uma bandeira</strong> através do botão direito do rato.<br> &emsp;&emsp;O <strong>objetivo</strong> do jogo
+                    é desvendar um campo de minas sem que alguma exploda no <strong>menor tempo possível</strong>. O cronómetro começa quando o jogador inicia o seu primeiro clique.<br> &emsp;&emsp;Tutorial de <strong>como jogar</strong>: <a href="https://www.youtube.com/watch?v=dvvrOeITzG8"
+                        target="_blank">clique aqui</a> ou <a href="https://www.youtube.com/watch?v=6vcSO7h6Nt0" target="_blank">aqui</a></p>
+            </div>
+
+            <h1 class="title">Modos do Jogo</h1>
+            <div class="modos">
+                <div class="card nove">
+                    <img src="../imagens/9x9grelha.jpeg" alt="grelha 9x9 campo minado">
+                    <a href="./login.html">
+                        <h2>Modo Fácil</h2>
+                    </a>
+                    <p>Campo 9x9 com 10 minas</p>
+                </div>
+                <div class="card dezasseis">
+                    <img src="../imagens/16x16.jpeg" alt="grelha 16x16 campo minado">
+                    <a href="./login.html">
+                        <h2>Modo Intermédio</h2>
+                    </a>
+                    <p>Campo 16x16 com 40 minas</p>
+                </div>
+                <div class="card trinta">
+                    <img src="../imagens/16x16.jpeg" alt="grelha 30x16 campo minado">
+                    <a href="./login.html">
+                        <h2>Modo Difícil</h2>
+                    </a>
+                    <p>Campo 30x16 casas com 99 minas</p>
+                </div>
+                <div class="card mais">
+                    <img src="../imagens/mais.jpeg" alt="representação de três pontos para ver mais modos">
+                    <a href="./play.html">
+                        <h2>Veja mais Modos</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./sobre.html#historia">Sobre o jogo</a></li>
+                <li><a href="./sobre.html#alunos">Sobre nós</a></li>
+            </ul>
+        </footer>
+    </section>
+    <nav>
+        <div class="login-icon" id="login-icon"></div>
+        <ul>
+            <li><a id="homepage" href="./index.html">Home</a></li>
+            <li><a id="perfilpage">Perfil</a></li>
+            <li><a href="./regras.html">Regras</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+        </ul>
+        <div class="playButn">
+            <a id="playpage">Play</a>
+        </div>
+    </nav>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

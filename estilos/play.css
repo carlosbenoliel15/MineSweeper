@@ -1,0 +1,214 @@
+/* ------------------------------------------------------------------------------- */
+
+
+/* Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL. */
+
+
+/*                              Ano letivo: 2021/2022                              */
+
+
+/*                   Site realizado pelo Grupo 40 do turno PL23:                   */
+
+
+/*   Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751  */
+
+
+/*               Apresentação/Estilos e Posicionamento dos elementos               */
+
+
+/* ------------------------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*--------------------------------------------*/
+
+.game-mode ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.game-mode1 ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.game-mode1 {
+    position: relative;
+    left: 50%;
+}
+
+.game-mode {
+    position: relative;
+}
+
+.game-mode li {
+    float: left;
+}
+
+.game-mode a {
+    text-transform: uppercase;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.game-mode a:hover {
+    color: orangered;
+}
+
+.game-mode1 li {
+    float: left;
+}
+
+.game-mode1 a {
+    text-transform: uppercase;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.game-mode1 a:hover {
+    color: orangered;
+}
+
+
+/*-------------------------------------------*/
+
+.container {
+    display: flex;
+    margin-top: 120px;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*-------------------------------------------*/
+
+.card {
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+}
+
+.card:hover {
+    background-color: rgb(30, 29, 29);
+    color: white;
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+
+/*----------------------------------------*/
+
+.card-image {
+    background-color: aqua;
+    height: 300px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.card-image .text {
+    position: absolute;
+    margin-left: 7.5%;
+}
+
+
+/*-------------------------------------------*/
+
+.diaD {
+    background-image: url("../imagens/campoMinado1.jpg");
+}
+
+.angola {
+    background-image: url("../imagens/minasAngola.png");
+}
+
+.afeganistao {
+    background-image: url("../imagens/afeganistãoMinas.jpg");
+}
+
+
+/*-------------------------------------------*/
+
+.card a {
+    background-color: rgb(30, 29, 29);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 100px 50px;
+    text-decoration: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.card a:hover {
+    font-size: 2.5em;
+}
+
+.card h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/*------------------------------------------*/
+
+button {
+    outline-style: none;
+    border-style: none;
+    cursor: pointer;
+    background-color: #c84b4b;
+    border-radius: 50%;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(30, 29, 29);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.info {
+    border-radius: 48%;
+    /*border: 1px solid rgba(255, 68, 0, 0.553);*/
+    background-color: rgba(255, 68, 0, 0.61);
+}
+
+.info:hover {
+    background-color: orangered;
+}
+
+@media (max-width: 599px) {
+    .game-mode {
+        position: relative;
+        left: 0%;
+    }
+    .game-mode1 {
+        position: relative;
+        left: 0%;
+    }
+}

@@ -1,0 +1,103 @@
+/* ------------------------------------------------------------------------------- */
+
+
+/* Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL. */
+
+
+/*                              Ano letivo: 2021/2022                              */
+
+
+/*                   Site realizado pelo Grupo 40 do turno PL23:                   */
+
+
+/*   Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751  */
+
+
+/*        Apresentação/Estilos e Posicionamento dos elementos do Tabuleiro         */
+
+
+/* ------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 760px) {
+    .tabuleiro {
+        transform: rotate(-90deg);
+    }
+    .container {
+        height: 950px;
+        width: 450px;
+    }
+    .centro {
+        margin-top: 0.5cm;
+        position: relative;
+    }
+    .verificada[data] {
+        transform: rotate(90deg);
+    }
+    .resultado {
+        bottom: 2.6cm;
+    }
+    .celula {
+        transform: rotate(90deg);
+    }
+}
+
+.reset {
+    border-radius: 25%;
+    box-shadow: 10px 20px 20px 0 rgb(0 0 0 / 40%), -10px 20px 20px 0 rgb(0 0 0 / 40%), 0px -2px 20px 0 rgb(0 0 0 / 40%);
+    padding-left: 0.2cm;
+    padding-top: 0.1cm;
+    width: 1cm;
+    position: relative;
+    color: white;
+    left: 3.4cm!important;
+    align-items: center;
+}
+
+.tabuleiro {
+    height: 400px;
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0px -2px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.celula {
+    height: 25px;
+    width: 25px;
+    background-color: #4a4b2c;
+    /*rgb(151, 132, 109) ou #5e0000 ou #843838*/
+    border: 3px inset #6a6b40;
+    padding-bottom: 0.1cm;
+    /*rgba(151, 132, 109, 0.849) ou #9b4f4f*/
+}
+
+.celula:hover {
+    background-color: blanchedalmond;
+}
+
+.bomba {
+    align-items: center;
+    /*background-image: url("bomba.png")!important;*/
+}
+
+.verificada {
+    background-color: #afb16e !important;
+    /*rgba(62, 21, 21, 0.815) ou #491111*/
+    border: 4px inset #b0b27a !important;
+    /*rgba(141, 55, 55, 0.863) ou #501a1a*/
+    align-items: center;
+}
+
+.sobre {
+    height: 4.5cm;
+}
+
+.verificada[data] {
+    color: #4a4b2c;
+    padding-top: 1px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: Arial, 'Lucida Sans', sans-serif;
+}

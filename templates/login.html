@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!-- ================================================================================== -->
+<!-- Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL.    -->
+<!--                               Ano letivo: 2021/2022                                -->
+<!--                    Site realizado pelo Grupo 40 do turno PL23:                     -->
+<!--    Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751    -->
+<!-- ================================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/login-registo.css">
+    <link rel="icon" type="image/png" href="../imagens/mine_logo.png" />
+    <title>MineSweeper 1.0 - Login</title>
+</head>
+
+<body class="registar">
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                <a href="./index.html"><img src="../imagens/MINESWEEPER.png" alt="logotipo MineSweeper" height="20"></a>
+            </h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="../audio_e_video/videoplayback-online-video-cuttercom_78igNW2U.mp4" muted loop autoplay>Your browser does not support the video element.</video>
+        <div class="container">
+            <div class="login">
+                <form id="frmLogin">
+                    <h2 class="title">Iniciar Sessão</h2>
+                    <div class="input-field">
+                        <input type="text" id="name" name="nome" placeholder="Nome de Utilizador" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="pass" name="password" placeholder="Palavra-passe" required>
+                    </div>
+                    <a href="./pw.html" class="forgot-password">Esqueci-me da palavra-passe</a>
+                    <input class="btn" type="submit" id="btnIniciarSessao" name="login" value="Login">
+
+                    <p>Não tem conta no MineSweeper?<br><a href="./registo.html">Registar</a></p>
+                    <div class="error">
+                        <p><span id="error"></span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="./regras.html">Regras</a></li>
+                <li><a href="./sobre.html#historia">Sobre o jogo</a></li>
+                <li><a href="./sobre.html#alunos">Sobre nós</a></li>
+            </ul>
+        </footer>
+    </section>
+    <nav>
+        <div class="login-icon" id="login-icon"></div>
+        <ul>
+            <li><a id="homepage" href="./index.html">Home</a></li>
+            <li><a id="perfilpage">Perfil</a></li>
+            <li><a href="./regras.html">Regras</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+        </ul>
+        <div class="playButn">
+            <a id="playpage">Play</a>
+        </div>
+    </nav>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+
+</html>

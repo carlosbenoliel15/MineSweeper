@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!-- ================================================================================== -->
+<!-- Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL.    -->
+<!--                               Ano letivo: 2021/2022                                -->
+<!--                    Site realizado pelo Grupo 40 do turno PL23:                     -->
+<!--    Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751    -->
+<!-- ================================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/jogo.css">
+    <link rel="stylesheet" href="../estilos/tabuleiroPersonalizado.css">
+    <link rel="icon" type="image/png" href="../imagens/mine_logo.png" />
+    <title>MineSweeper 1.0 - Jogar</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                <a href="./index.html"><img src="../imagens/MINESWEEPER.png" alt="logotipo MineSweeper" height="20"></a>
+            </h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="../audio_e_video/videoplayback-online-video-cuttercom_78igNW2U.mp4" muted loop autoplay>Your browser does not support the video element.</video>
+
+        <div class="container">
+            <div class="sobre">
+                <h1>Jogo Personalizável</h1>
+                <hr class="hr-margin">
+                <div class="score centro">
+                    <div class="relogio relgio">
+                        <h2>
+                            <span id="spanTempoJogo">00:00</span>
+                        </h2>
+                    </div>
+                    <div class="reset">
+                        <a href="./jogo_personalizavel.html"><img src="../imagens/reset.png" alt="reset logo" height="20"></a>
+                    </div>
+                    <div class="nBombas">
+                        <h2><span id="spanFlags">0</span>&#128681;</h2>
+                    </div>
+                    <div class="resultado">
+                        <p><span id="resultado"></span></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="packTabuleiro">
+                <div class="tabuleiro"></div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="./regras.html">Regras</a></li>
+                <li><a href="./sobre.html#historia">Sobre o jogo</a></li>
+                <li><a href="./sobre.html#alunos">Sobre nós</a></li>
+            </ul>
+        </footer>
+    </section>
+    <nav>
+        <div class="login-icon" id="login-icon"></div>
+        <ul>
+            <li><a id="homepage" href="./index.html">Home</a></li>
+            <li><a id="perfilpage">Perfil</a></li>
+            <li><a href="./regras.html">Regras</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+        </ul>
+        <div class="playButn">
+            <a id="playpage">Play</a>
+        </div>
+    </nav>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/comportamento.js"></script>
+</body>
+
+</html>

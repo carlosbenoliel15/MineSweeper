@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!-- ================================================================================== -->
+<!-- Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL.    -->
+<!--                               Ano letivo: 2021/2022                                -->
+<!--                    Site realizado pelo Grupo 40 do turno PL23:                     -->
+<!--    Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751    -->
+<!-- ================================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/play.css">
+    <link rel="icon" type="image/png" href="../imagens/mine_logo.png" />
+    <title>Minesweeper 1.0 - Modos do Jogo</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                <a href="./index.html"><img src="../imagens/MINESWEEPER.png" alt="logotipo MineSweeper" height="20"></a>
+            </h2>
+            <div class="toggle"></div>
+        </header>
+
+        <div class="game-mode">
+            <ul>
+                <li><a href="./jogo_facil_9_9_10.html">Fácil</a></li>
+                <li><a href="./jogo_multi___12_12_30.html">Multijogador</a></li>
+                <li><a href="./jogo_personalizavel_forms.html">Personalizado</a></li>
+                <li><button id="btnPersonalizado"><span class="info">&ensp;&#8505;&ensp;</span></button></li>
+            </ul>
+        </div>
+        <!-- Popup Modo Fácil -->
+        <div id="modalFacil" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <div class="title">Modo Fácil</div>
+
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Tabuleiro:</strong><br> - Dimensão 9x9 casas, com 10 💣 dispostas aleatoriamente;<br> - No final de cada jogo, mostra-se uma tabela de pontuações, com os melhores tempos e nome do jogador. <br>
+                        <br>
+                        <strong>Ações numa casa do tabuleiro:</strong><br> - <u>Explorar</u>: indica se a casa tem ou não 💣 e revela quantas 💣 há em redor* dessa casa (*Só nas casas imediatamente contíguas à casa explorada);<br> - <u>Marcar</u>: assinala
+                        presença de 💣 numa casa, podendo ter um ❓ ou 🚩 com o lado direito do rato. <br>
+                        <br>
+                        <strong>Fim de um jogo:</strong><br> - <u>Ganha</u> 👑 se todas as casas sem minas tiverem sido exploradas;<br> - <u>Perde</u> se explorar uma casa com uma 💣 .
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Popup Modo Intermédio -->
+        <div id="modalIntermedio" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <div class="title">Modo Intermédio</div>
+
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Tabuleiro:</strong><br> - Dimensão 16x16 casas, com 40 💣 dispostas aleatoriamente;<br> - Interação usando o teclado ou o rato;<br> - No final de cada jogo, mostra-se uma tabela de pontuações, com os melhores tempos e nome
+                        do jogador. <br>
+                        <br>
+                        <strong>Ações numa casa do tabuleiro:</strong><br> - <u>Explorar</u>: indica se a casa tem ou não 💣 e revela quantas 💣 há em redor* dessa casa (*Só nas casas imediatamente contíguas à casa explorada);<br> - <u>Marcar</u>: assinala
+                        presença de 💣 numa casa, podendo ter um ❓ ou 🚩. <br>
+                        <br>
+                        <strong>Fim de um jogo:</strong><br> - <u>Ganha</u> 👑 se todas as casas sem bombas tiverem sido exploradas;<br> - <u>Perde</u> se explorar uma casa com uma 💣.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Popup Modo Díficil -->
+        <div id="modalDificil" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <div class="title">Modo Difícil</div>
+
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Jogadores:</strong><br> - Dimensão 30x16 casas, com 99 💣 dispostas aleatoriamente;<br> - Interação usando o teclado ou o rato;<br> - No final de cada jogo, mostra-se uma tabela de pontuações, com os melhores tempos e nome
+                        do jogador. <br>
+                        <br>
+                        <strong>Ações numa casa do tabuleiro:</strong><br> - <u>Explorar</u>: indica se a casa tem ou não 💣 e revela quantas 💣 há em redor* dessa casa (*Só nas casas imediatamente contíguas à casa explorada);<br> - <u>Marcar</u>: assinala
+                        presença de 💣 numa casa, podendo ter um ❓ ou 🚩.<br>
+                        <br>
+                        <strong>Fim de um jogo:</strong><br> - <u>Ganha</u> 👑 se todas as casas sem bombas tiverem sido exploradas;<br> - <u>Perde</u> se explorar uma casa com uma 💣.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Popup Modo Personalizado -->
+        <div id="modalPersonalizado" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <div class="title">Modo Personalizado / Multijogador</div>
+
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Jogadores:</strong><br> - Multijogador com tabuleiros lado-a-lado, uma jogada por ronda. <br>
+                        <br>
+                        <strong>Tabuleiro:</strong><br> - Tabuleiros maiores, com número variável de 💣.<br>
+                        <br>
+                        <strong>Tempo:</strong><br> - Modo personalizado com opção de tempo crescente ou decrescente.<br>
+                        <br>
+                        <strong>Início sem risco:</strong><br> - Possibilidade da primeira jogada não ter 💣.<br>
+                        <br>
+                        <strong>Ações numa casa do tabuleiro:</strong><br> - <u>Explorar</u>: indica se a casa tem ou não 💣 e revela quantas 💣 há em redor* dessa casa (*Só nas casas imediatamente contíguas à casa explorada);<br> - <u>Marcar</u>: assinala
+                        presença de 💣 numa casa, podendo ter um ❓ ou 🚩.<br>
+                        <br>
+                        <strong>Fim de um jogo:</strong><br> - <u>Ganha</u> 👑 se todas as casas sem bombas tiverem sido exploradas;<br> - <u>Perde</u> se o tempo limite for atingido ou se explorar uma casa com uma 💣.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="facilCard" class="card">
+                <div class="card-image diaD"></div>
+                <h2>Fácil <button id="btnFacil"><span class="info"></span></button></h2>
+                <p>9x9 casas com 10 minas</p>
+                <a href="./jogo_facil_9_9_10.html">Play</a>
+            </div>
+            <div id="intermedioCard" class="card">
+                <div class="card-image angola"></div>
+                <h2>Intermédio <button id="btnIntermedio"><span class="info"></span></button></h2>
+                <p>16x16 casas com 40 minas</p>
+                <a href="./jogo_intermedio_16_16_40.html">Play</a>
+            </div>
+            <div id="dificilCard" class="card">
+                <div class="card-image afeganistao"></div>
+                <h2>Experiente <button id="btnDificil"><span class="info"></span></button></h2>
+                <p>30x16 casas com 99 minas</p>
+                <a href="./jogo_dificil_30_16_99.html">Play</a>
+            </div>
+        </div>
+    </section>
+    <nav>
+        <div class="login-icon" id="login-icon">
+        </div>
+        <ul>
+            <li><a id="homepage" href="./index.html">Home</a></li>
+            <li><a id="perfilpage">Perfil</a></li>
+            <li><a href="./regras.html">Regras</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+        </ul>
+        <div class="playButn">
+            <a id="playpage">Play</a>
+        </div>
+    </nav>
+    <script src="../scripts/play.js "></script>
+    <script src="../scripts/main.js "></script>
+</body>
+
+</html>

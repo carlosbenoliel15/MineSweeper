@@ -1,0 +1,91 @@
+/* ------------------------------------------------------------------------------- */
+
+
+/* Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL. */
+
+
+/*                              Ano letivo: 2021/2022                              */
+
+
+/*                   Site realizado pelo Grupo 40 do turno PL23:                   */
+
+
+/*   Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751  */
+
+
+/*        Apresentação/Estilos e Posicionamento dos elementos do Tabuleiro         */
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 760px) {
+ 
+    .container {
+        height: 15cm;
+        width: 490px;
+    }
+
+    .celula {
+        height: 25px;
+        width: 25px;
+    }
+}
+.container {
+    height: 19cm;
+}
+
+.packTabuleiro {
+    padding-top: 4cm;
+    padding-right: 0.2cm;
+}
+
+.sobre {
+    top: 6.5cm;
+    position: absolute;
+    height: 3.5cm;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+.tabuleiro {
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0px -2px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.celula {
+    height: 30px;
+    width: 30px;
+    background-color: #2e343b;
+    border: 4px inset #3b4047;
+    /*border: 1.5px solid rgb(90, 81, 70);*/
+}
+
+.celula:hover {
+    background-color: blanchedalmond;
+}
+
+.bomba {
+    align-items: center;
+    /*background-image: url("bomba.png")!important;*/
+}
+
+.verificada {
+    background-color: #999fa5 !important;
+    border: 4px inset #848a91 !important;
+    align-items: center;
+}
+
+.verificada[data] {
+    color: #2e343b;
+    padding-top: 1.3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: Arial, 'Lucida Sans', sans-serif;
+}

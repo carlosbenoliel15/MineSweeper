@@ -1,0 +1,95 @@
+/* ------------------------------------------------------------------------------- */
+
+
+/* Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL. */
+
+
+/*                              Ano letivo: 2021/2022                              */
+
+
+/*                   Site realizado pelo Grupo 40 do turno PL23:                   */
+
+
+/*   Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751  */
+
+
+/*        Apresentação/Estilos e Posicionamento dos elementos do Tabuleiro         */
+
+
+/* ------------------------------------------------------------------------------- */
+
+.container {
+    height: 15cm;
+}
+
+.sobre {
+    height: 3.5cm;
+    text-align: center;
+    position: absolute;
+    bottom: 14.5cm;
+}
+
+
+/*-------------------------*/
+
+.packTabuleiro {
+    padding-top: 3.5cm;
+    padding-right: 0.2cm;
+}
+
+.score {
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+.tabuleiro {
+    margin: 0 auto;
+    z-index: -3;
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    /*<img class="imagem" src='../imagens/quadrado-azul.png' alt="quadrado" height="30">*/
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0px -2px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.celula {
+    float: left;
+    height: 40px;
+    width: 40px;
+    background-color: #7a7064;
+    border: 4px inset #877d70;
+    cursor: pointer;
+}
+
+.celula:hover {
+    background-color: blanchedalmond;
+}
+
+.bomba {
+   
+    align-items: center;
+    /*background-image: url("bomba.png")!important;*/
+    /*<img src="../imagens/bomba.gif" class="bomba som" alt="bomba" height="30">*/
+}
+
+.verificada {
+    /*background-color: rgba(141, 55, 55, 0.863)!important;*/
+    background-color: #4a4742!important;
+    border: 4px inset #70685f!important;
+    align-items: center;
+}
+
+.verificada[data] {
+    color: antiquewhite;
+    padding-top: 1.7%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 125%;
+    font-family: Arial, 'Lucida Sans', sans-serif;
+}

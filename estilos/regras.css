@@ -1,0 +1,102 @@
+/* ------------------------------------------------------------------------------- */
+/* Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL. */
+/*                              Ano letivo: 2021/2022                              */
+/*                   Site realizado pelo Grupo 40 do turno PL23:                   */
+/*   Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751  */
+/*               Apresentação/Estilos e Posicionamento dos elementos               */
+/* ------------------------------------------------------------------------------- */
+*{
+    color: white;
+}
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    filter: blur(10px);
+}
+/*______________________________________*/
+.container{ 
+    display: flex;
+    z-index: 1;
+    flex-wrap:wrap;
+    opacity: 1;
+    margin: 3cm 2cm 3cm  2cm; 
+    padding: 1cm;
+    background-color: #333;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0px -2px 20px 0 rgba(0, 0, 0, 0.4);
+    text-align: justify;
+}
+/*_________________________________________*/
+.modos{
+    display:flex;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nove, .dezasseis, .trinta, .mais{
+    margin: 0 1cm;
+}
+/*_____________________________________________*/
+.card{
+    bottom: 1cm;
+}
+.card p {
+    margin-bottom: 1cm;
+}
+.card a{
+    text-decoration: none;
+}
+
+.card img {
+    padding: 5%;
+    height:300px;
+    background-color: #333;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0px -2px 20px 0 rgba(0, 0, 0, 0.4);
+}
+/*________________________________________________*/
+.regras{
+    text-align: center !important;
+    padding-bottom: 1cm;
+    text-transform: uppercase;
+}
+strong, .card h2:hover{
+    color:rgba(234, 198, 91, 0.789);
+}
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1cm;
+}
+.text ul{
+    padding-left: 2cm;
+}
+a{
+    color: black;  
+}
+
+.text a{
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+.text a:hover{
+    letter-spacing: 6px;
+}
+
+.title{
+    text-align: center;
+    padding-top: 0.5cm;
+    margin: 0% 35%;
+}

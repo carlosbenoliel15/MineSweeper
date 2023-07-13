@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!-- ================================================================================== -->
+<!-- Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL.    -->
+<!--                               Ano letivo: 2021/2022                                -->
+<!--                    Site realizado pelo Grupo 40 do turno PL23:                     -->
+<!--    Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751    -->
+<!-- ================================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/jogoPersonalizado.css">
+    <link rel="icon" type="image/png" href="../imagens/mine_logo.png" />
+    <title>MineSweeper 1.0 - Registo</title>
+</head>
+
+<body class="box">
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                <a href="./index.html"><img src="../imagens/MINESWEEPER.png" alt="logotipo MineSweeper" height="20"></a>
+            </h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="../audio_e_video/videoplayback-online-video-cuttercom_78igNW2U.mp4" muted loop autoplay>Your browser does not support the video element.</video>
+
+        <div class="container">
+            <div class="personalizado">
+                <form id="frmDefiniçoes">
+                    <h2 class="title">Jogo Personalizado</h2>
+                    <fieldset>
+
+                        <label for="selNrBombas">Numero de Bombas</label>
+                        <input id="selNrBombas" type="number" value="10" name="nrBombas" min="1" max="390" required>
+                        </br>
+                        <label for="selAltura">Altura </label>
+                        <input id="selAltura" type="number" value="10" name="nrAltura" min="5" max="20" required>
+                        </br>
+                        <label for="selComprimento">Comprimento</label>
+                        <input id="selComprimento" type="number" value="10" name="nrComprimento" min="5" max="20" required>
+                        </br>
+                        <label for="selTempoMaximo">Tempo Maximo</label>
+                        <input id="selTempoMaximo" type="number" value="0" name="nrTempoMax" min="0" max="20" required>
+                        </br>
+                        <p class=" p">Inicio sem risco: </p>
+                        <div class=" icons">
+                            <label for="riscoSim">Sim</label>
+                            <input id="risco" type="radio" name="risco" value="Sim" checked>
+
+                            <label for="riscoNao">Não</label>
+                            <input id="risco" type="radio" name="risco" value="Nao">
+                        </div>
+
+                    </fieldset>
+                    <button id="btnJogar" class="btn" type="button">JOGAR</button>
+
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="./regras.html">Regras</a></li>
+                <li><a href="./sobre.html#historia">Sobre o jogo</a></li>
+                <li><a href="./sobre.html#alunos">Sobre nós</a></li>
+            </ul>
+        </footer>
+    </section>
+    <nav>
+        <div class="login-icon" id="login-icon">
+        </div>
+        <ul>
+            <li><a id="homepage" href="./index.html">Home</a></li>
+            <li><a id="perfilpage">Perfil</a></li>
+            <li><a href="./regras.html">Regras</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+        </ul>
+        <div class="playButn">
+            <a id="playpage">Play</a>
+        </div>
+    </nav>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/personalizado.js"></script>
+</body>
+
+</html>

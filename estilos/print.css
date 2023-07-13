@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------------------------- */
+/* Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL. */
+/*                              Ano letivo: 2021/2022                              */
+/*                   Site realizado pelo Grupo 40 do turno PL23:                   */
+/*   Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751  */
+/*                         Tamanho da janela para imprimir                         */
+/* ------------------------------------------------------------------------------- */
+@media print { 
+    body { 
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        background-color: white; 
+        text-align: justify;
+    }
+    
+    .menu{
+        display: none;
+    }
+}

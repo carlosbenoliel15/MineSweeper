@@ -1,0 +1,110 @@
+/* ------------------------------------------------------------------------------- */
+
+
+/* Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL. */
+
+
+/*                              Ano letivo: 2021/2022                              */
+
+
+/*                   Site realizado pelo Grupo 40 do turno PL23:                   */
+
+
+/*   Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751  */
+
+
+/*        Apresentação/Estilos e Posicionamento dos elementos do Tabuleiro         */
+
+
+/* ------------------------------------------------------------------------------- */
+
+.tabuleiros {
+    width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    height: 19cm;
+    width: 50cm;
+}
+
+.packTabuleiro {
+    padding-top: 4cm;
+    padding-right: 0.2cm;
+}
+
+.sobre {
+    top: 6.5cm;
+    position: absolute;
+    height: 3.5cm;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+.tabuleiro {
+    position: relative;
+    margin-right: 10cm;
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0px -2px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.tabuleiro1 {
+    position: absolute;
+    margin-left: 13cm;
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0px -2px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.celula {
+    height: 30px;
+    width: 30px;
+    background-color: #3c6535;
+    border: 4px inset #50836e;
+    /*border: 1.5px solid rgb(90, 81, 70);*/
+}
+
+.celula1 {
+    height: 30px;
+    width: 30px;
+    background-color: #335174;
+    border: 4px inset #707f93;
+    /*border: 1.5px solid rgb(90, 81, 70);*/
+}
+
+.celula:hover {
+    background-color: rgba(130, 254, 130, 0.336);
+}
+
+.celula1:hover {
+    background-color: rgba(117, 117, 254, 0.541);
+}
+
+.bomba {
+    align-items: center;
+    /*background-image: url("bomba.png")!important;*/
+}
+
+.verificada {
+    background-color: #999fa5 !important;
+    border: 4px inset #848a91 !important;
+    align-items: center;
+}
+
+.verificada[data] {
+    color: #2e343b;
+    padding-top: 1.3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: Arial, 'Lucida Sans', sans-serif;
+}

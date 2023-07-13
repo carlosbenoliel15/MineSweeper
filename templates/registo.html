@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!-- ================================================================================== -->
+<!-- Introdução às Tecnologias Web (ITW) - LTI - Departamento de Informática - FCUL.    -->
+<!--                               Ano letivo: 2021/2022                                -->
+<!--                    Site realizado pelo Grupo 40 do turno PL23:                     -->
+<!--    Beatriz Pereira nº57579 | Carlos Martins nº57574 | Gonçalo Domingues nº51751    -->
+<!-- ================================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/login-registo.css">
+    <link rel="icon" type="image/png" href="../imagens/mine_logo.png" />
+    <title>MineSweeper 1.0 - Registo</title>
+</head>
+
+<body class="registar">
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                <a href="./index.html"><img src="../imagens/MINESWEEPER.png" alt="logotipo MineSweeper" height="20"></a>
+            </h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="../audio_e_video/videoplayback-online-video-cuttercom_78igNW2U.mp4" muted loop autoplay>Your browser does not support the video element.</video>
+
+        <div class="container">
+            <div class="login">
+                <form id="frmUtilizador" action="./login.html">
+                    <h2 class="title">Registo</h2>
+                    <div class="input-field">
+                        <input type="text" id="nome" name="nome" placeholder="Nome de Utilizador" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" id="idade" name="idade" min="1" max="120" placeholder="Idade" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="genero">Género: </label>
+                        <input type="radio" class="checkbox" id="masculino" name="genero" value="M" required>
+                        <label for="masculino">M</label>
+                        <input type="radio" class="checkbox" id="feminino" name="genero" value="F" required>
+                        <label for="feminino">F</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="pass" name="password" placeholder="Palavra-passe" required>
+                    </div>
+                    <input class="btn" type="submit" id="btnRegistar" value="Registar">
+                    <p>Já tem conta no MineSweeper?<br><a href="./login.html">Iniciar Sessão</a></p>
+                    <div class="error">
+                        <p><span id="error"></span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="./regras.html">Regras</a></li>
+                <li><a href="./sobre.html#historia">Sobre o jogo</a></li>
+                <li><a href="./sobre.html#alunos">Sobre nós</a></li>
+            </ul>
+        </footer>
+    </section>
+    <nav>
+        <div class="login-icon" id="login-icon"></div>
+        <ul>
+            <li><a id="homepage" href="./index.html">Home</a></li>
+            <li><a id="perfilpage">Perfil</a></li>
+            <li><a href="./regras.html">Regras</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+        </ul>
+        <div class="playButn">
+            <a id="playpage">Play</a>
+        </div>
+    </nav>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/registo.js"></script>
+</body>
+
+</html>
