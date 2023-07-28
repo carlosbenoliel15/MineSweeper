@@ -103,7 +103,7 @@ function login_user(){
 
         // Atualiza a página com o login feito.
         if(exist){
-            location.href = "../templates/index.html";
+            location.href = "../index.html";
             formulario.reset();
             userLoggedIn(credentials.nome);
         }else{

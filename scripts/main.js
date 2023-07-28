@@ -77,7 +77,7 @@ function perfilButton(){
 
 function logout() {
     localStorage.setItem('logged', "false");
-    checkLogin("../templates/index.html");
+    checkLogin("../index.html");
 }
 
 function loginLogoutIcon() {
